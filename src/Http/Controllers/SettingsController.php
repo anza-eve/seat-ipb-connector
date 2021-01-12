@@ -26,7 +26,7 @@ use Seat\Web\Http\Controllers\Controller;
 /**
  * Class SettingsController.
  *
- * @package Warlof\Seat\Connector\Drivers\Ipb\Http\Controllers
+ * @package Anza\Seat\Connector\Drivers\Ipb\Http\Controllers
  */
 class SettingsController extends Controller
 {
@@ -51,6 +51,6 @@ class SettingsController extends Controller
         setting(['seat-connector.drivers.forums', $settings], true);
 
         return redirect()->route('seat-connector.settings')
-            ->with('success', 'IPB settings has successfully been updated.');
+            ->with('success', 'Forums settings has successfully been updated.');
     }
 }

@@ -19,7 +19,7 @@
  */
 
 Route::group([
-    'namespace'  => 'Warlof\Seat\Connector\Drivers\Ipb\Http\Controllers',
+    'namespace'  => 'Anza\Seat\Connector\Drivers\Ipb\Http\Controllers',
     'prefix'     => 'seat-connector',
     'middleware' => ['web', 'auth', 'locale'],
 ], function () {
@@ -30,7 +30,7 @@ Route::group([
 
         Route::get('/forums', [
             'as'   => 'seat-connector.drivers.forums.registration',
-            'uses' => 'RegistrationController@redirectToProvider',
+            'uses' => 'RegistrationController@handleRegistration',
         ]);
 
     });
