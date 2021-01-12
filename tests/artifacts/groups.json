@@ -1,0 +1,53 @@
+{
+  "page": 1,
+  "perPage": 25,
+  "totalResults": 21,
+  "totalPages": 1,
+  "results": [
+      {
+          "id": 2,
+          "name": "Guests",
+          "formattedName": "Guests"
+      },
+      {
+          "id": 3,
+          "name": "Members",
+          "formattedName": "Members"
+      },
+      {
+          "id": 4,
+          "name": "Administrators",
+          "formattedName": "<span style='color:#ff0000'>Administrators</span>"
+      },
+      {
+          "id": 6,
+          "name": "Moderators",
+          "formattedName": "Moderators"
+      },
+      {
+          "id": 7,
+          "name": "Users Awaiting Email Confirmation",
+          "formattedName": "Users Awaiting Email Confirmation"
+      },
+      {
+          "id": 9,
+          "name": "Banned Users",
+          "formattedName": "Banned Users"
+      },
+      {
+          "id": 10,
+          "name": "TEST GROUP",
+          "formattedName": "TEST GROUP"
+      },
+      {
+          "id": 11,
+          "name": "Another Test Group",
+          "formattedName": "Another Test Group"
+      },
+      {
+          "id": 12,
+          "name": "Yet another test group",
+          "formattedName": "Yet another test group"
+      }
+  ]
+}

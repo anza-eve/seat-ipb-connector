@@ -1,0 +1,62 @@
+{
+    "id": 3,
+    "name": "TEST USER",
+    "title": null,
+    "timeZone": "UTC",
+    "formattedName": "TEST USER",
+    "primaryGroup": {
+        "id": 10,
+        "name": "TEST GROUP",
+        "formattedName": "TEST GROUP"
+    },
+    "secondaryGroups": [
+        {
+            "id": 11,
+            "name": "Another Test Group",
+            "formattedName": "Another Test Group"
+        }
+    ],
+    "email": "testuser@example.com",
+    "joined": "2006-12-01T01:00:00Z",
+    "registrationIpAddress": "127.0.0.1",
+    "warningPoints": 0,
+    "reputationPoints": 10000,
+    "photoUrl": "",
+    "photoUrlIsDefault": false,
+    "coverPhotoUrl": "",
+    "profileUrl": "https://example.com/community/profile/3-test-user/",
+    "validating": false,
+    "posts": 52,
+    "lastActivity": "2010-08-05T10:37:00Z",
+    "lastVisit": "2010-05-26T12:45:35Z",
+    "lastPost": null,
+    "birthday": null,
+    "profileViews": 303,
+    "customFields": {
+        "1": {
+            "name": "Personal Information",
+            "fields": {
+                "1": {
+                    "name": "About Me",
+                    "value": null
+                },
+                "2": {
+                    "name": "Biography",
+                    "value": null
+                },
+                "3": {
+                    "name": "Location",
+                    "value": null
+                },
+                "4": {
+                    "name": "Interests",
+                    "value": null
+                },
+                "5": {
+                    "name": "Occupation",
+                    "value": null
+                }
+            }
+        }
+    }
+}
