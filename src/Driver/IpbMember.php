@@ -193,12 +193,12 @@ class IpbMember implements IUser
             $new_group = $response['primaryGroup']['id'];
             if (in_array($group->getId(), config('ipb-connector.config.primary_groups', []))) {
                 $new_group = $group->getId();
-            } else {
-                $current_groups->push([
-                    'id' => $group->getId(),
-                    'name' => $group->getName(),
-                ]);
             }
+            
+            $current_groups->push([
+                'id' => $group->getId(),
+                'name' => $group->getName(),
+            ]);
 
             // update user with new group memberships
             IpbClient::getInstance()->sendCall('POST', '/core/members/{user.id}', [
@@ -240,11 +240,11 @@ class IpbMember implements IUser
             $new_group = $response['primaryGroup']['id'];
             if (in_array($group->getId(), config('ipb-connector.config.primary_groups', []))) {
                 $new_group = config('ipb-connector.config.default_group', 3);
-            } else {
-                $current_groups = $current_groups->reject(function ($value, $key) use ($group) {
-                    return $value['id'] == $group->getId();
-                });
             }
+
+            $current_groups = $current_groups->reject(function ($value, $key) use ($group) {
+                return $value['id'] == $group->getId();
+            });
 
             // update user with new group memberships
             IpbClient::getInstance()->sendCall('POST', '/core/members/{user.id}', [
